@@ -13,7 +13,7 @@ public class Max3 {
         System.out.print("값을 띄어쓰기로 구분해서 입력해주세요 : ");
         String input = stdIn.nextLine();
 
-        // String으로 받은 값을 Integer List로 바꾸는 법
+        // String 으로 받은 값을 Integer List로 바꾸는 법
         List<String> strList = Arrays.asList(input.split(" "));
         List<Integer> intList = strList.stream()
                 .map(Integer::parseInt)
@@ -26,7 +26,7 @@ public class Max3 {
         int max = intList.get(0);
         int listSize = intList.size();
 
-        for (int i=1; i<listSize;i++){
+        for (int i=1; i<listSize; i++){
             int currInt = intList.get(i);
 
             if (currInt > max) {
